@@ -1,8 +1,9 @@
-// Type definitions for Matter.js - 0.10.1
+// Type definitions for Matter.js - 0.14.2
 // Project: https://github.com/liabru/matter-js
 // Definitions by: Ivane Gegia <https://twitter.com/ivanegegia>,
 //                 David Asmuth <https://github.com/piranha771>,
-//                 Piotr Pietrzak <https://github.com/hasparus> 
+//                 Piotr Pietrzak <https://github.com/hasparus>
+//                 Ken Colton <https://github.com/kcolton>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 export = Matter;
@@ -1630,7 +1631,7 @@ declare namespace Matter {
         stiffness?: number;
 
         /**
-         * A `Number` that specifies the damping of the constraint, 
+         * A `Number` that specifies the damping of the constraint,
          * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
          * Damping will only be apparent when the constraint also has a very low `stiffness`.
          * A value of `0.1` means the constraint will apply heavy damping, resulting in little to no oscillation.
@@ -1786,7 +1787,7 @@ declare namespace Matter {
         stiffness: number;
 
         /**
-         * A `Number` that specifies the damping of the constraint, 
+         * A `Number` that specifies the damping of the constraint,
          * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
          * Damping will only be apparent when the constraint also has a very low `stiffness`.
          * A value of `0.1` means the constraint will apply heavy damping, resulting in little to no oscillation.
@@ -2388,7 +2389,7 @@ declare namespace Matter {
         /**
          * Render wireframes only
          * @type boolean
-         * @default true 
+         * @default true
          */
         wireframes?: boolean;
     }
@@ -3352,7 +3353,7 @@ declare namespace Matter {
         static trigger(object: any, eventNames: string, event?: (e: any) => void): void;
 
     }
-    
+
     type Dependency = {name: string, range: string}
                     | {name: string, version: string}
                     | string;
@@ -3362,7 +3363,7 @@ declare namespace Matter {
         version: string;
         install: () => void;
         for?: string;
-        
+
         /**
          * Registers a plugin object so it can be resolved later by name.
          * @method register
@@ -3370,16 +3371,16 @@ declare namespace Matter {
          * @return {object} The plugin.
          */
         static register(plugin: Plugin): Plugin;
-      
+
         /**
-         * Resolves a dependency to a plugin object from the registry if it exists. 
+         * Resolves a dependency to a plugin object from the registry if it exists.
          * The `dependency` may contain a version, but only the name matters when resolving.
          * @method resolve
          * @param dependency {string} The dependency.
          * @return {object} The plugin if resolved, otherwise `undefined`.
          */
         static resolve(dependency: string): Plugin | undefined;
-        
+
         /**
          * Returns `true` if the object meets the minimum standard to be considered a plugin.
          * This means it must define the following properties:
@@ -3453,7 +3454,7 @@ declare namespace Matter {
          * @return {object} The dependency parsed into its components.
          */
         static dependencyParse(dependency: Dependency) : {name: string, range: string};
-        
+
         /**
          * Parses a version string into its components.
          * Versions are strictly of the format `x.y.z` (as in [semver](http://semver.org/)).
