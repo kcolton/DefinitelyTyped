@@ -1630,6 +1630,8 @@ declare namespace Matter {
         */
         stiffness?: number;
 
+        angularStiffness?: number;
+
         /**
          * A `Number` that specifies the damping of the constraint,
          * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
@@ -1651,6 +1653,8 @@ declare namespace Matter {
         * @default "constraint"
         */
         type?: string;
+
+        plugin?: object;
     }
 
     export interface IConstraintRenderDefinition {
