@@ -1212,6 +1212,8 @@ declare namespace Matter {
         * @default "composite"
         */
         type?: String;
+
+        plugin?: object;
     }
 
     /**
@@ -1440,6 +1442,7 @@ declare namespace Matter {
         */
         type: String;
 
+        plugin: object;
     }
 
     /**
