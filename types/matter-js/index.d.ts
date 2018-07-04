@@ -2355,7 +2355,7 @@ declare namespace Matter {
         */
         textures?: any;
 
-
+        mouse?: Mouse;
     }
 
     export interface IRendererOptions {
@@ -2518,6 +2518,8 @@ declare namespace Matter {
         * @type {}
         */
         textures: any;
+
+        mouse: Mouse;
     }
 
 
