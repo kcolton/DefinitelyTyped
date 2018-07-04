@@ -1662,7 +1662,7 @@ declare namespace Matter {
         * @type number
         * @default 2
         */
-        lineWidth: number;
+        lineWidth?: number;
 
         /**
          * A `String` that defines the stroke style to use when rendering the constraint outline.
@@ -1672,7 +1672,7 @@ declare namespace Matter {
         * @type string
         * @default a random colour
         */
-        strokeStyle: string;
+        strokeStyle?: string;
 
         /**
          * A flag that indicates if the constraint should be rendered.
@@ -1681,7 +1681,7 @@ declare namespace Matter {
         * @type boolean
         * @default true
         */
-        visible: boolean;
+        visible?: boolean;
     }
 
 
