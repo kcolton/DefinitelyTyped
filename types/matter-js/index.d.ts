@@ -595,8 +595,9 @@ declare namespace Matter {
          * @method rotate
          * @param {body} body
          * @param {number} rotation
+         * @param {vector} position
          */
-        static rotate(body: Body, rotation: number): void;
+        static rotate(body: Body, rotation: number, position?: Vector): void;
         /**
          * Returns the next unique group index for which bodies will collide.
          * If `isNonColliding` is `true`, returns the next unique group index for which bodies will _not_ collide.
