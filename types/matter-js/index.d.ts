@@ -2392,6 +2392,27 @@ declare namespace Matter {
          * @default true
          */
         wireframes?: boolean;
+
+        background?: string;
+        enabled?: boolean;
+        pixelRatio?: number;
+        showAngleIndicator?: boolean;
+        showAxes?: boolean;
+        showBounds?: boolean;
+        showBroadphase?: boolean;
+        showCollisions?: boolean;
+        showConvexHulls?: boolean;
+        showDebug?: boolean;
+        showIds?: boolean;
+        showInternalEdges?: boolean;
+        showMousePosition?: boolean;
+        showPositions?: boolean;
+        showSeparations?: boolean;
+        showShadows?: boolean;
+        showSleeping?: boolean;
+        showVelocity?: boolean;
+        showVertexNumbers?: boolean;
+        wireframeBackground?: string;
     }
 
     /**
