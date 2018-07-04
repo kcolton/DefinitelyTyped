@@ -3011,7 +3011,7 @@ declare namespace Matter {
          * @param body
          * @returns world
          */
-        static add(world: World, body: Body | Array<Body> | Composite | Array<Composite> | Constraint | Array<Constraint> | MouseConstraint): World;
+        static add(world: World, body: Body | Array<Body | Constraint | Composite> | Composite | Constraint | MouseConstraint): World;
 
         /**
          * An alias for Composite.addBody since World is also a Composite
