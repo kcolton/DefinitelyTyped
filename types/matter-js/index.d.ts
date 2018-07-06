@@ -487,7 +487,8 @@ declare namespace Matter {
         * @type object
         */
         collisionFilter?: ICollisionFilter;
-
+        
+        plugin?: object;
     }
 
     export interface IBodyRenderOptions {
@@ -1073,7 +1074,8 @@ declare namespace Matter {
         * @type object
         */
         collisionFilter: ICollisionFilter;
-
+        
+        plugin: object;
     }
 
     export interface IBound {
